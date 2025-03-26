@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="fabricaDonas"/>
+        <attribute name="authors" value="gabri"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-24 05:53:29 p. m."/>
+        <attribute name="created" value="Z2Ficmk7RkFNSUxZUUE7MjAyNS0wMy0yNDswNTo0MTo1NCBwLiBtLjsyNTgy"/>
+        <attribute name="edited" value="Z2Ficmk7RkFNSUxZUUE7MjAyNS0wMy0yNDswNTo1MzoyOSBwLiBtLjsyOzI2OTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nDonas" type="Integer" array="False" size=""/>
+            <declare name="precio, total" type="Real" array="False" size=""/>
+            <output expression="&quot;Ingrese el n&#250;mero de donas a comprar:&quot;" newline="True"/>
+            <input variable="nDonas"/>
+            <if expression="nDonas&gt;=50">
+                <then>
+                    <assign variable="precio" expression="8.00"/>
+                </then>
+                <else>
+                    <if expression="nDonas&gt;=30">
+                        <then>
+                            <assign variable="precio" expression="9.00"/>
+                        </then>
+                        <else>
+                            <assign variable="precio" expression="10"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="total" expression="nDonas*precio"/>
+            <output expression="&quot;El precio total a pagar es de: $ &quot;" newline="False"/>
+            <output expression="total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
