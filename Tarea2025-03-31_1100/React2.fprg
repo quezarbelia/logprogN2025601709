@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="gabriel"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-02 12:58:47 a. m."/>
+        <attribute name="created" value="Z2FicmllbDsgZ2FicmllbC1MZW5vdm8taWRlYXBhZC0zMzAtMTVBU1Q7IDIwMjUtMDQtMDI7IDEyOjUzOjE4IGEuIG0uOyA1MDAz"/>
+        <attribute name="edited" value="Z2FicmllbDsgZ2FicmllbC1MZW5vdm8taWRlYXBhZC0zMzAtMTVBU1Q7IDIwMjUtMDQtMDI7IDEyOjU4OjQ3IGEuIG0uOyA1MDEw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="edad" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ingrese su edad&quot;"/>
+            <input variable="edad"/>
+            <if expression="edad&gt;18">
+                <then>
+                    <output expression="&quot;EL precio es de: $ 500.00&quot;"/>
+                </then>
+                <else>
+                    <if expression="edad&gt;=4">
+                        <then>
+                            <output expression="&quot;El precio es de: $ 200.00&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="edad&gt;=0">
+                                <then>
+                                    <output expression="&quot;Entrada &#161;G R A T I S!&quot;"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;edad ilogica&quot;"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

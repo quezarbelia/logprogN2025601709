@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="gabriel"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-02 12:53:03 a. m."/>
+        <attribute name="created" value="Z2FicmllbDsgZ2FicmllbC1MZW5vdm8taWRlYXBhZC0zMzAtMTVBU1Q7IDIwMjUtMDQtMDI7IDEyOjM3OjE4IGEuIG0uOyA1MDA1"/>
+        <attribute name="edited" value="Z2FicmllbDsgZ2FicmllbC1MZW5vdm8taWRlYXBhZC0zMzAtMTVBU1Q7IDIwMjUtMDQtMDI7IDEyOjUzOjAzIGEuIG0uOyA0OTk3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="in, sex" type="String" array="False" size=""/>
+            <output expression="&quot;Ingrese su inicial (Mayuscula)&quot;"/>
+            <input variable="in"/>
+            <output expression="&quot;Ingrese su sexo(Masculino=M o Femenino=F)&quot;"/>
+            <input variable="sex"/>
+            <if expression="sex==&quot;M&quot;||sex==&quot;F&quot;">
+                <then>
+                    <if expression="(sex==&quot;F&quot;&amp;&amp;(in==&quot;A&quot;||in==&quot;B&quot;||in==&quot;C&quot;||in==&quot;D&quot;||in==&quot;F&quot;||in==&quot;G&quot;||in==&quot;H&quot;||in==&quot;I&quot;||in==&quot;J&quot;||in==&quot;K&quot;||in==&quot;L&quot;||in==&quot;M&quot;))||(sex==&quot;M&quot;&amp;&amp;(in==&quot;N&quot;||in==&quot;&#209;&quot;||in==&quot;O&quot;||in==&quot;P&quot;||in==&quot;Q&quot;||in==&quot;R&quot;||in==&quot;S&quot;||in==&quot;T&quot;||in==&quot;U&quot;||in==&quot;V&quot;||in==&quot;W&quot;||in==&quot;X&quot;||in==&quot;Y&quot;||in==&quot;Z&quot;))">
+                        <then>
+                            <output expression="&quot;Eres parte del grupo A&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="(sex==&quot;M&quot;&amp;&amp;(in==&quot;A&quot;||in==&quot;B&quot;||in==&quot;C&quot;||in==&quot;D&quot;||in==&quot;F&quot;||in==&quot;G&quot;||in==&quot;H&quot;||in==&quot;I&quot;||in==&quot;J&quot;||in==&quot;K&quot;||in==&quot;L&quot;||in==&quot;M&quot;))||(sex==&quot;F&quot;&amp;&amp;(in==&quot;N&quot;||in==&quot;&#209;&quot;||in==&quot;O&quot;||in==&quot;P&quot;||in==&quot;Q&quot;||in==&quot;R&quot;||in==&quot;S&quot;||in==&quot;T&quot;||in==&quot;U&quot;||in==&quot;V&quot;||in==&quot;W&quot;||in==&quot;X&quot;||in==&quot;Y&quot;||in==&quot;Z&quot;))">
+                                <then>
+                                    <output expression="&quot;Eres parte del grupo B&quot;"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Datos erroneos&quot;"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Sexo ilogico&quot;"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
