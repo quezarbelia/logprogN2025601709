@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Pizza"/>
+        <attribute name="authors" value="gabri"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-03 09:34:51 p. m."/>
+        <attribute name="created" value="Z2Ficmk7RkFNSUxZUUE7MjAyNS0wNC0wMzswOToyNzowOCBwLiBtLjsyNTg3"/>
+        <attribute name="edited" value="Z2Ficmk7RkFNSUxZUUE7MjAyNS0wNC0wMzswOTozNDo1MSBwLiBtLjsxOzI2OTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="opc" type="Integer" array="False" size=""/>
+            <output expression="&quot;Seleccione el tipo de pizza: Vegetariana (1) o No vegetariana(2)&quot;" newline="True"/>
+            <input variable="opc"/>
+            <if expression="opc==1">
+                <then>
+                    <output expression="&quot;Selecione su ingrediente: Pimiento(1) o Tofu(2)&quot;" newline="True"/>
+                    <input variable="opc"/>
+                    <if expression="opc==1">
+                        <then>
+                            <output expression="&quot;Pizza vegetariana con pimineto&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="opc==2">
+                                <then>
+                                    <output expression="&quot;Pizza vegetariana con tofu&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Opcion ilogica&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="opc==2">
+                        <then>
+                            <output expression="&quot;Seleccione su ingrediente: Peperoni (1), Jamon (2) o Salmon (3)&quot;" newline="True"/>
+                            <input variable="opc"/>
+                            <if expression="opc==1">
+                                <then>
+                                    <output expression="&quot;Pizza de peperoni&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="opc==2">
+                                        <then>
+                                            <output expression="&quot;Pizza de jamon&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="opc==3">
+                                                <then>
+                                                    <output expression="&quot;Pizza de salmon&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Opcion ilogica&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;Opcion il&#243;gica&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
