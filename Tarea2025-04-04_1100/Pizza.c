@@ -18,10 +18,12 @@ int main()
         case 1:
             printf("BUENA ELECCION:\n");
             printf("Pizza vegetariana con pimineto");
+            printf("\nIncluye tomate y mozzarela");
             break;
         case 2:
             printf("BUENA ELECCION:\n");
             printf("Pizza vegetariana con tofu");
+printf("\nIncluye tomate y mozzarela");
             break;
         default:
             printf("Opcion ilogica");
@@ -37,14 +39,17 @@ int main()
         case 1:
             printf("BUENA ELECCION:\n");
             printf("Pizza de peperoni");
+printf("\nIncluye tomate y mozzarela");
             break;
         case 2:
             printf("BUENA ELECCION:\n");
             printf("Pizza de jamon");
+printf("\nIncluye tomate y mozzarela");
             break;
         case 3:
             printf("BUENA ELECCION:\n");
             printf("Pizza de salmon");
+printf("\nIncluye tomate y mozzarela");
             break;
         default:
             printf("Opcion ilogica");
