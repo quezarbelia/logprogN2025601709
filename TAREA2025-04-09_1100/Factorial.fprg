@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="factorial"/>
+        <attribute name="authors" value="gabri"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-09 08:54:57 a. m."/>
+        <attribute name="created" value="Z2Ficmk7RkFNSUxZUUE7MjAyNS0wNC0wODsxMDo0MjoxMCBwLiBtLjsyNTc0"/>
+        <attribute name="edited" value="Z2Ficmk7RkFNSUxZUUE7MjAyNS0wNC0wOTswODo1NDo1NyBhLiBtLjsyOzI2OTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y" type="Integer" array="False" size=""/>
+            <output expression="&quot;BIENVENIDO&quot;" newline="True"/>
+            <output expression="&quot;asigne un numero entero para obtener su factorial&quot;" newline="True"/>
+            <input variable="x"/>
+            <assign variable="y" expression="1"/>
+            <while expression="x&gt;0">
+                <assign variable="y" expression="y*x"/>
+                <assign variable="x" expression="x-1"/>
+            </while>
+            <output expression="y" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
